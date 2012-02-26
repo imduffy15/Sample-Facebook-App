@@ -1,0 +1,1 @@
+This is an sample facebook application made using codeigniter

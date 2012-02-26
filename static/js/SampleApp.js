@@ -24,10 +24,10 @@ window.fbAsyncInit = function() {
 	});
 	
 	FB.getLoginStatus(function (response) {
-        // If the user is not logged in, response.session will be null
         if (response.authResponse) {
-			// user logged in
 			SampleApp.facebook_access_token = response.authResponse.accessToken;
 			SampleApp.logged_in_user_id = response.authResponse.userID;
 		}
+   });
+
 };

@@ -13,7 +13,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	  xmlns:fb="http://www.facebook.com/2008/fbml">
 	<head>
-		<link href="<?php echo base_url(); ?>/static/style/SampleApp.css" rel="stylesheet" type="text/css" />
+		<link href="<?php echo base_url(); ?>/static/styles/SampleApp.css" rel="stylesheet" type="text/css" />
 		<script type="text/javascript">
 			var SampleApp = {};
 			SampleApp.config = {};

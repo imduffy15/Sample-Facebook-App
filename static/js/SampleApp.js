@@ -1,7 +1,7 @@
 if (self===top) {
 	var url_path = window.location.pathname.replace('/SampleApp/','');
     top.location.href = SampleApp.config.fbAppRoot + url_path;
-}
+} 
 
 $(document).ready(function(){
 	(function() {

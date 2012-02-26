@@ -38,12 +38,21 @@ a:hover {
 
 /* end reset styles */
 
-html, .fb-container {
-	width: 760px;
+html, body, .fb-container {
+	width: 100%;
+}
+
+.header {
+    height: 100px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
 }
 
 h1 {
-    margin-bottom: 10px;
+    padding-top: 30px;
 }
 
 h2 {

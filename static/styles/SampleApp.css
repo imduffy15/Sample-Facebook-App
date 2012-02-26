@@ -1,0 +1,77 @@
+/* begin reset styles */
+
+body, html {
+	background-color: white;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border-collapse: collapse;
+	background-repeat: no-repeat;
+}
+
+body {
+	color: #333;
+	font-size: 12px;
+	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+	line-height: 1.25;
+	position: relative;
+}
+
+a img, fieldset {
+	border: 0;
+}
+
+ul, ol {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: #005689;
+}
+
+a:hover {
+	text-decoration: underline
+}
+
+/* end reset styles */
+
+html, .fb-container {
+	width: 760px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+h2 {
+    font: 23px/27px georgia;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+h3 {
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h5 {
+    font: 14px/18px arial;
+    font-weight: bold;
+    color: #000;
+    border-top: 2px solid #ccc;
+    padding-top: 3px;
+    margin-bottom: 10px;
+}

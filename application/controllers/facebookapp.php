@@ -2,7 +2,7 @@
 
 class FacebookApp extends CI_Controller {
 	
-	private $data;
+	
 
 	function __construct()
 	{	
@@ -23,12 +23,12 @@ class FacebookApp extends CI_Controller {
         );
 		$this->load->library('facebook', $fb_config);
 		$user = $this->facebook->getUser();
-		
+
 		if($user){
 			try {
 				$data['me'] = $this->facebook->api('/me/');
 				$data['friends_list'] = $this->facebook->api('/me/friends');
-				$data['appUrl'] = 'http://apps.facebook.com/'.$fb_config['appId'];
+				$data['appUrl'] = 'https://apps.facebook.com/'.$fb_config['appId'];
 				$data['appId'] = $fb_config['appId'];
 			} catch (FacebookApiException $e) {
 				error_log($e->getType());
@@ -37,7 +37,6 @@ class FacebookApp extends CI_Controller {
 		} else {
 			$data['loginUrl'] = $this->facebook->getLoginUrl(array('canvas' => 1, 'fbconnect' => 0, 'scope' => '',));
 		}
-	
 		$this->load->view('facebookview',$data);
 	}
 

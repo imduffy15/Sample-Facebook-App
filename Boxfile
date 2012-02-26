@@ -1,0 +1,9 @@
+web1:
+	name: sampleapp
+	shared_writable_dirs: 
+			- application/cache
+			- application/logs
+	php_extensions:
+			- mysql
+db1:
+	name: sampleapp

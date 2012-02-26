@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://private.tuts4tech.net/SampleApp/';
+$config['base_url']	= 'https://sampleapp.pagodabox.com';
 
 /*
 |--------------------------------------------------------------------------

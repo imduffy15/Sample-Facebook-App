@@ -3,7 +3,6 @@ if (self===top) {
     top.location.href = SampleApp.config.fbAppRoot + url_path;
 } 
 
-
 $(document).ready(function(){
 	(function() {
 	    var e = document.createElement('script');

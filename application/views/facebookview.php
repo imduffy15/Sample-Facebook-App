@@ -22,20 +22,32 @@
 			SampleApp.config.fbAppRoot = "<?php echo $appUrl; ?>/";
 			SampleApp.config.appId = "<?php echo $appId; ?>";
 		</script>
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script type="text/javascript" src="<?php echo base_url(); ?>static/js/SampleApp.js"></script>
 	</head>
 	<body>	
 		<div id="fb-root"></div>
-		<div class="header">
-			<h1><span style="color:red">Friend</span> Collage</h1>
-		</div>
 		<div class="container">
 		<?php
 			foreach($friends_list['data'] as $friend) {
-				echo '<a target="_top" title="'.$friend['name'].'" href="http://www.facebook.com/profile.php?id='.$friend['id'].'"><img src="http://graph.facebook.com/'.$friend['id'].'/picture" /></a>';
+				echo '
+					<div class="images">
+						<a target="_top" title="'.$friend['name'].'" href="http://www.facebook.com/profile.php?id='.$friend['id'].'">
+							<span class="avatar"><img src="http://graph.facebook.com/'.$friend['id'].'/picture" /></span>
+						</a>
+					</div>';
 			}
 		?>
+					<script type="text/javascript">
+					$('.images').hover(
+							function(){
+								$(this).siblings().addClass('fade');
+							},
+							function(){
+									$(this).siblings().removeClass('fade');
+							}
+					);
+					</script>
 		</div>
 	</body>
 </html>
